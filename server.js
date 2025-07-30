@@ -26,7 +26,7 @@ const server = http.createServer(app);
 
 const io = socketIO(server, {
   cors: {
-    origin: "*",
+    origin: "https://plaudern-frontend.vercel.app",
     methods: ["GET", "POST"]
   }
 });
