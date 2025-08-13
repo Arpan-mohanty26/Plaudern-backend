@@ -28,6 +28,6 @@ exports.getRoomMessages = async (req, res) => {
 
         res.status(201).json(messages)
     } catch (error) {
-        res.status(400).json({message:"error retrieving messages"});
+        res.status(401).json({message:"error retrieving messages"});
     }
 }
